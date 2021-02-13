@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+    <title>Character Name</title>
+    <link rel="icon" href="GryffindorCrest.png">
+</head>
+<style>
+    body {
+        background-color: #FFD3D3;
+    }
+    
+    /*ribbon*/
+
+    #ribbon {
+        overflow: hidden;
+        background-color: #FF2727;
+    }
+
+    #ribbon a {
+        float: left;
+        font-size: 16px;
+        font-family: serif;
+        color: #FFD3D3;
+        text-align: center;
+        padding: 15px 17px;
+        text-decoration: none;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown #HarryPotter {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: #FFD3D3;
+        padding: 15px 17px;
+        background-color: #FF2727;
+        font-family: serif;
+        margin: 0;
+        border-right: 1px solid #FFD3D3;
+    }
+
+    .toplinks {
+        border-right: 1px solid #FFD3D3;
+    }
+
+    #ribbon a:hover, .dropdown:hover #HarryPotter {
+        background-color: #D80B0B;
+    }
+
+    #ribbon .toplinks:active {
+        color: #FF2727;
+    }
+
+    #houses {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    #houses a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    #houses a:hover {
+        background-color: white;
+    }
+
+    .dropdown:hover #houses {
+        display: block;
+    }
+
+    /*Houses*/
+
+    #gryffindor:hover {
+        color: #FF2727;
+        font-weight: bold;
+    }
+    #gryffindor:active {
+        color: #D80B0B;
+    }
+    #slytherin:hover {
+        color: #007D0D;
+        font-weight: bold;
+    }
+    #slytherin:active {
+        color: #00600A;
+    }
+    #ravenclaw:hover {
+        color: #2200C6;
+        font-weight: bold;
+    }
+    #ravenclaw:active {
+        color: #1B009F;
+    }
+    #hufflepuff:hover {
+        color: #EFD700;
+        font-weight: bold;
+    }
+    #hufflepuff:active {
+        color: #D4BE00;
+    }
+    #others:hover {
+        font-weight: bold;
+    }
+    #others:active {
+        color: #707070;
+    }
+
+    /*heading/picture*/
+
+    #title {
+        text-align: center;
+        color: #FF2727;
+    }
+    #picture {
+        display: block;
+        width: 33%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*Information*/
+
+    #info {
+        padding: 5px 10px 5px;
+        overflow: hidden;
+        background-color: white;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .category {
+        font-weight: bold;
+    }
+    .people {
+        text-decoration: none;
+        color: black;
+        font-style: italic;
+    }
+    .people:hover {
+        text-decoration: underline;
+    }
+    .people:active {
+        font-weight: bold;
+    }
+</style>
+<body>
+
+    <!-- Ribbon -->
+    
+    <div id="ribbon">
+        <a href="index.html" class="toplinks">Home</a>
+        <div class="dropdown">
+            <button id="HarryPotter">Harry Potter 
+                <i id="separate"></i>
+            </button>
+            <div id="houses">
+                <a href="Gryffindor.html" id="gryffindor">Gryffindor</a>
+                <a href="Slytherin.html" id="slytherin">Slytherin</a>
+                <a href="Ravenclaw.html" id="ravenclaw">Ravenclaw</a>
+                <a href="Hufflepuff.html" id="hufflepuff">Hufflepuff</a>
+                <a href="Others.html" id="others">Others</a>
+            </div>
+        </div>
+    </div>
+    
+    <!--Heading/picture-->
+    <h1 id="title">Full Name</h1>
+
+    <img id="picture" src="CharacterName.jpg" alt="Actor as Character on the set of Harry Potter">
+    </br>
+    
+    <!--Information-->
+
+    <p id="info">
+        <span class="category">Portrayed by: </span></br>
+
+        <span class="category">Birthday: </span></br>
+
+        <span class="category">Parents: </span></br>
+
+        <span class="category">Siblings: </span></br>
+
+        <span class="category">Spouse: </span></br>
+
+        <span class="category">Children: </span></br>
+
+        <span class="category">Occupation: </span></br>
+
+        <span class="category">Patronus: </span></br>
+
+        <span class="category">Shipped with: </span><a class="people" href="FirstLast.html">First Last</a>, 
+        <a class="people" href="FirstLast.html">First Last</a>, 
+        <a class="people" href="FirstLast.html">First Last</a>, 
+        <a class="people" href="FirstLast.html">First Last</a>, 
+        <a class="people" href="FirstLast.html">First Last</a>
+    </p>
+</body>
+</html>
