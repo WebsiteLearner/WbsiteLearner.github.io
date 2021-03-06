@@ -314,3 +314,6 @@ body {
 .PersonPageLink:active {
     font-weight: bold;
 }
+h3 {
+    font-weight: normal;
+}
